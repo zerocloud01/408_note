@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>((getMarkmap) => {
+          window.WebFontConfig = {
+            custom: {
+              families: [
+                "KaTeX_AMS",
+                "KaTeX_Caligraphic:n4,n7",
+                "KaTeX_Fraktur:n4,n7",
+                "KaTeX_Main:n4,n7,i4,i7",
+                "KaTeX_Math:i4,i7",
+                "KaTeX_Script",
+                "KaTeX_SansSerif:n4,n7,i4",
+                "KaTeX_Size1",
+                "KaTeX_Size2",
+                "KaTeX_Size3",
+                "KaTeX_Size4",
+                "KaTeX_Typewriter"
+              ]
+            },
+            active: () => {
+              getMarkmap().refreshHook.call();
+            }
+          };
+        })(() => window.markmap)</script><script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" defer></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"&#x8ba1;&#x7b97;&#x673a;&#x7cfb;&#x7edf;&#x6982;&#x8ff0;","children":[{"content":"&#x8ba1;&#x7b97;&#x673a;&#x7cfb;&#x7edf;&#x5c42;&#x6b21;&#x7ed3;&#x6784;","children":[{"content":"&#x8ba1;&#x7b97;&#x673a;&#x7cfb;&#x7edf;&#x7684;&#x7ec4;&#x6210;","children":[{"content":"<strong>&#x786c;&#x4ef6;</strong>&#x6307;&#x6709;&#x5f62;&#x7684;&#x7269;&#x7406;&#x88c5;&#x7f6e;&#xff0c;&#x5373;&#x8ba1;&#x7b97;&#x673a;&#x7cfb;&#x7edf;&#x4e2d;&#x7684;&#x5404;&#x7c7b;&#x7269;&#x7406;&#x90e8;&#x4ef6;&#x3002;","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"&#x8f6f;&#x4ef6;&#x5219;&#x662f;&#x5728;&#x786c;&#x4ef6;&#x4e0a;&#x8fd0;&#x884c;&#x7684;&#x7a0b;&#x5e8f;&#x673a;&#x5668;&#x76f8;&#x5173;&#x7684;&#x6570;&#x636e;&#x4e0e;&#x6587;&#x6863;&#x3002;","children":[],"payload":{"tag":"li","lines":"11,13"}}],"payload":{"tag":"h3","lines":"8,9"}},{"content":"&#x8ba1;&#x7b97;&#x673a;&#x786c;&#x4ef6;","children":[{"content":"&#x51af;&#x8bfa;&#x4f9d;&#x66fc;&#x673a;&#x7279;&#x70b9;","children":[],"payload":{"tag":"h4","lines":"18,19"}},{"content":"&#x8ba1;&#x7b97;&#x673a;&#x529f;&#x80fd;&#x90e8;&#x4ef6;","children":[{"content":"CPU","children":[],"payload":{"tag":"h5","lines":"32,33"}},{"content":"&#x5b58;&#x50a8;&#x5668;","children":[],"payload":{"tag":"h5","lines":"47,48"}},{"content":"&#x5916;&#x90e8;&#x8bbe;&#x5907;&#x548c;&#x8bbe;&#x5907;&#x63a7;&#x5236;&#x5668;","children":[],"payload":{"tag":"h5","lines":"58,59"}},{"content":"&#x603b;&#x7ebf;","children":[],"payload":{"tag":"h5","lines":"63,64"}}],"payload":{"tag":"h4","lines":"27,28"}}],"payload":{"tag":"h3","lines":"15,16"}},{"content":"&#x8ba1;&#x7b97;&#x673a;&#x8f6f;&#x4ef6;","children":[{"content":"&#x7cfb;&#x7edf;&#x8f6f;&#x4ef6;&#x548c;&#x5e94;&#x7528;&#x8f6f;&#x4ef6;","children":[],"payload":{"tag":"h4","lines":"67,68"}},{"content":"&#x8f6f;&#x786c;&#x4ef6;&#x903b;&#x8f91;&#x529f;&#x80fd;&#x7b49;&#x4ef7;&#x6027;","children":[],"payload":{"tag":"h4","lines":"72,73"}}],"payload":{"tag":"h3","lines":"66,67"}},{"content":"&#x8ba1;&#x7b97;&#x673a;&#x7684;&#x5c42;&#x6b21;&#x7ed3;&#x6784;","children":[{"content":"&#x7b97;&#x6cd5;&#x548c;&#x7f16;&#x7a0b;","children":[{"content":"&#x7f16;&#x7a0b;&#x8bed;&#x8a00;","children":[{"content":"&#x673a;&#x5668;&#x8bed;&#x8a00;","children":[],"payload":{"tag":"li","lines":"80,81"}},{"content":"&#x6c47;&#x7f16;&#x8bed;&#x8a00;","children":[],"payload":{"tag":"li","lines":"81,82"}},{"content":"&#x9ad8;&#x7ea7;&#x8bed;&#x8a00;","children":[],"payload":{"tag":"li","lines":"82,84"}}],"payload":{"tag":"h5","lines":"79,80"}},{"content":"&#x7ffb;&#x8bd1;&#x7a0b;&#x5e8f;","children":[{"content":"&#x6c47;&#x7f16;&#x7a0b;&#x5e8f;&#xff08;&#x6c47;&#x7f16;&#x5668;&#xff09;","children":[],"payload":{"tag":"h6","lines":"85,86"}},{"content":"&#x89e3;&#x91ca;&#x7a0b;&#x5e8f;&#xff08;&#x89e3;&#x91ca;&#x5668;&#xff09;","children":[],"payload":{"tag":"h6","lines":"88,89"}},{"content":"&#x7f16;&#x8bd1;&#x7a0b;&#x5e8f;&#xff08;&#x7f16;&#x8bd1;&#x5668;&#xff09;","children":[],"payload":{"tag":"h6","lines":"91,92"}}],"payload":{"tag":"h5","lines":"84,85"}}],"payload":{"tag":"h4","lines":"77,78"}},{"content":"&#x64cd;&#x4f5c;&#x7cfb;&#x7edf;OS","children":[],"payload":{"tag":"h4","lines":"94,95"}},{"content":"&#x6307;&#x4ee4;&#x96c6;&#x4f53;&#x7cfb;&#x7ed3;&#x6784;ISA","children":[],"payload":{"tag":"h4","lines":"97,98"}},{"content":"&#x5fae;&#x4f53;&#x7cfb;&#x7ed3;&#x6784;","children":[],"payload":{"tag":"h4","lines":"100,101"}}],"payload":{"tag":"h3","lines":"75,76"}},{"content":"&#x8ba1;&#x7b97;&#x673a;&#x7cfb;&#x7edf;&#x7684;&#x5de5;&#x4f5c;&#x539f;&#x7406;","children":[{"content":"&#x5b58;&#x50a8;&#x7a0b;&#x5e8f;&#x5de5;&#x4f5c;&#x65b9;&#x5f0f;","children":[],"payload":{"tag":"h4","lines":"109,110"}},{"content":"&#x4ece;&#x6e90;&#x7a0b;&#x5e8f;&#x5230;&#x53ef;&#x6267;&#x884c;&#x6587;&#x4ef6;","children":[],"payload":{"tag":"h4","lines":"112,113"}}],"payload":{"tag":"h3","lines":"107,108"}}],"payload":{"tag":"h2","lines":"7,8"}},{"content":"&#x8ba1;&#x7b97;&#x673a;&#x7684;&#x6027;&#x80fd;&#x6307;&#x6807;","children":[{"content":"&#x4e3b;&#x8981;&#x6027;&#x80fd;&#x6307;&#x6807;","children":[{"content":"&#x8fd0;&#x7b97;&#x901f;&#x5ea6;","children":[{"content":"&#x541e;&#x5410;&#x91cf;","children":[],"payload":{"tag":"h5","lines":"122,123"}},{"content":"&#x54cd;&#x5e94;&#x65f6;&#x95f4;","children":[],"payload":{"tag":"h5","lines":"125,126"}},{"content":"CPU&#x65f6;&#x949f;&#x5468;&#x671f;","children":[],"payload":{"tag":"h5","lines":"128,129"}},{"content":"&#x4e3b;&#x9891;&#xff08;CPU&#x65f6;&#x949f;&#x9891;&#x7387;&#xff09;","children":[],"payload":{"tag":"h5","lines":"135,136"}},{"content":"CPI","children":[],"payload":{"tag":"h5","lines":"138,139"}},{"content":"IPS","children":[],"payload":{"tag":"h5","lines":"143,144"}},{"content":"CPU&#x6267;&#x884c;&#x65f6;&#x95f4;","children":[],"payload":{"tag":"h5","lines":"148,149"}},{"content":"MIPS","children":[],"payload":{"tag":"h5","lines":"156,157"}},{"content":"FLOPS","children":[],"payload":{"tag":"h5","lines":"161,162"}}],"payload":{"tag":"h4","lines":"120,121"}},{"content":"&#x57fa;&#x51c6;&#x7a0b;&#x5e8f;","children":[],"payload":{"tag":"h4","lines":"172,173"}}],"payload":{"tag":"h3","lines":"118,119"}}],"payload":{"tag":"h2","lines":"116,117"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>
