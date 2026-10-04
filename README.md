@@ -23,5 +23,5 @@
 
 ### 笔记
 仅记录关键部分，可以配合vscode拓展`markmap`预览思维导图
-
-**对于没有内容的标题，是为了规避`markmap`将无序列表作为导图的内容**
+修改设置的`markmap.defaultOptions`项选择需要的项进入导图
+> 个人设置为"markmap.defaultOptions": "{ \"htmlParser\": { \"selector\": \"h1,h2,h3,h4,h5,h6\" } }"，此时仅h1 $\sim$ h6 六级标题进入导图
